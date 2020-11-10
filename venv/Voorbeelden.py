@@ -51,7 +51,7 @@ from tkinter.ttk import Combobox
 # #
 # #
 for i in range(len(lijst)):
-    # print(int(lijst[i][0]) + int(lijst[i][1]))
+    print(int(lijst[i][0]) + int(lijst[i][1]))
     try:
         score += (int(lijst[i][0]))
     except ValueError:
