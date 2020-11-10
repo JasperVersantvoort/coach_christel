@@ -50,17 +50,17 @@ from tkinter.ttk import Combobox
 # # score = 0
 # #
 # #
-# # for i in range(len(lijst)):
-# #     # print(int(lijst[i][0]) + int(lijst[i][1]))
-# #     try:
-# #         score += (int(lijst[i][0]))
-# #     except ValueError:
-# #         print("Andere fout")
-# #     try:
-# #         score += (int(lijst[i][1]))
-# #     except ValueError:
-# #         print("Fout")
-# # print(score)
+for i in range(len(lijst)):
+    # print(int(lijst[i][0]) + int(lijst[i][1]))
+    try:
+        score += (int(lijst[i][0]))
+    except ValueError:
+        print("Andere fout")
+    try:
+        score += (int(lijst[i][1]))
+    except ValueError:
+        print("Fout")
+print(score)
 
 lijst = ["lijst aa1","lijst aa2"]
 
