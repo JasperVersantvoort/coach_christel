@@ -1,13 +1,22 @@
 import tkinter
 from tkinter.ttk import Combobox
-# lijst = [["auto", 4, "onzin"],["fiets", 2, "onzin"],["driewieler", 3,"onzin"]]
-# #print (lijst)
-#
-# for i in range(len(lijst)):
-#
-#     print((lijst[i][0])+" "+str((lijst[i][1])))
-#
-# # print("auto" + str(4))
+
+lijst1 =[]
+lijst = [["auto", 4, "onzin"],["fiets", 2, "onzin"],["driewieler", 2,
+                                                     "onzin"]]
+#print (lijst)
+
+
+for onderdeel_lijst in lijst:
+    #print(onderdeel_lijst)
+    if onderdeel_lijst[1] not in lijst1:
+        lijst1.append(onderdeel_lijst[1])
+print(lijst1)
+
+# for i in range(10):
+    # print(i)
+
+# print("auto" + str(4))
 
 
 
@@ -42,16 +51,16 @@ from tkinter.ttk import Combobox
 # print(score)
 
 
-#
-# lijst = [["niks", "3"],["7","adsofjad"],["20","0"]]
-# #
-# # print(lijst)
-# #
-# # score = 0
-# #
-# #
+
+lijst = [["niks", "3"],["7","adsofjad"],["20","0"]]
+
+print(lijst)
+
+score = 0
+
+
 for i in range(len(lijst)):
-    print(int(lijst[i][0]) + int(lijst[i][1]))
+    # print(int(lijst[i][0]) + int(lijst[i][1]))
     try:
         score += (int(lijst[i][0]))
     except ValueError:
